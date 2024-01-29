@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.addtocart"
+                        template="Kadoco_PreOrder::addtocart.phtml">
+            <arguments>
+                <argument name="IsProductPreOrder" xsi:type="object">
+                    Kadoco\PreOrder\Model\IsProductPreOrder
+                </argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="catalog.product.related">
+            <arguments>
+                <argument name="IsProductPreOrder" xsi:type="object">
+                    Kadoco\PreOrder\Model\IsProductPreOrder
+                </argument>
+            </arguments>
+
+        </referenceBlock>
+    </body>
+</page>
